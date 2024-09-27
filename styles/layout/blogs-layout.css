@@ -1,0 +1,91 @@
+.blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0 0;
+}
+
+.blog-card {
+    width: 350px;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    font: 400 16px 'Roboto', sans-serif;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.title-separator {
+    border: 0;
+    height: 1px;
+    background: #5d5d5d;
+    margin: 10px 0;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.card-content {
+    display: none;
+    margin: 15px 0 0;
+    font: 14px/1.5 'Roboto', sans-serif;
+    color: #666;
+}
+
+.toggle-checkbox:checked~.card-content {
+    display: block;
+}
+
+.content-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.read-more,
+.read-less {
+    display: inline-block;
+    font: bold 14px 'Roboto', sans-serif;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.read-less {
+    display: none;
+}
+
+.toggle-checkbox:checked~.read-more {
+    display: none;
+}
+
+.toggle-checkbox:checked~.read-less {
+    display: inline-block;
+}
+
+.toggle-checkbox:not(:checked)~.read-less {
+    display: none;
+}
+
+.toggle-checkbox:not(:checked)~.read-more {
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

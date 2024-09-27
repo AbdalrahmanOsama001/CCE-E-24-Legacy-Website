@@ -1,0 +1,71 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #003366, #002244);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border: none;
+}
+
+.top-left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.title-button {
+    text-decoration: none;
+    font: bold 18px 'Roboto', sans-serif;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.title-sub-text{
+    font: 14px 'Roboto', sans-serif;
+    font-style: oblique;
+    color: whitesmoke;
+}
+
+.title-button:hover {
+    color: #007BFF;
+}
+
+.cce-legacy-icon {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.top-right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.about {
+    background-color: #00BFFF;
+    border: none;
+    height: 36px;
+    width: 75px;
+    font: bold 20px 'Roboto', sans-serif;
+    border-radius: 18px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.about:hover {
+    background-color: #007197;
+    color: whitesmoke;
+}
+
+.about:active {
+    background-color: #60d7ff;
+    color: black;
+}

@@ -1,0 +1,42 @@
+.footer-container {
+    background: linear-gradient(to top, #003366, #002244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fcfcfc;
+}
+
+.bot-mid-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bot-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+    gap: 10px;
+}
+
+.telegram-icon {
+    width: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.telegram-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(233, 183, 4, 0.9);
+}
+
+.credits,
+.date,
+.telegram-text {
+    font: italic 14px 'Roboto', sans-serif;
+    color: #fcfcfc;
+    text-align: center;
+}

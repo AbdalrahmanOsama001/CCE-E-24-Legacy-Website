@@ -1,0 +1,12 @@
+@import url(layout/header-layout.css);
+@import url(layout/body-layout.css);
+@import url(layout/footer-layout.css);
+@import url(layout/blogs-layout.css);
+@import url(layout/about-layout.css);
+
+.main-home-grid{
+    display: grid;
+    /* grid-template-rows: 1fr 12fr 3fr; */
+    height: 100%;
+    width: 100%;
+}

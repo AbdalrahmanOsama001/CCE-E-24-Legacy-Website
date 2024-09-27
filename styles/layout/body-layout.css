@@ -1,0 +1,107 @@
+.body-container {
+    padding: 80px 12px 0;
+    background: linear-gradient(-45deg, #004080, #003366, #002244, #001F3F);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite, fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.categories-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.category-card {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.category-title {
+    border: none;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    background: rgb(234, 234, 234);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: bold 20px 'Roboto', sans-serif;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.read-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: bolder 20px/1 'Roboto', sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    background: #2863b6;
+}
+
+.category-card:hover .category-title {
+    opacity: 0;
+}
+
+.category-card:hover .read-about {
+    opacity: 1;
+}
+
+.category-card:hover .category-image {
+    opacity: 0.3;
+}
+
+.category-card:active {
+    background-color: #b1b1ab;
+}
